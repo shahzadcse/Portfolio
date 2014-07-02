@@ -1,0 +1,758 @@
+/* less for informa portal */
+/* ========================== 
+File : informa.less
+Description : Less file for common portal specific style.
+Dated : 17 March 2014
+Author : Shahzad Hussain 
+Email : shahzad.hussain@informa.com 
+======================== */
+
+// Core variables and mixins
+@import "variables.less";
+@import "mixins.less";
+@import "global.less";
+// Reset
+@import "normalize.less";
+@import "print.less";
+
+
+body {
+       font-family:@font-family-serif;
+       font:@font-size-base;
+    } 
+
+/* header section */
+
+header {
+    @media (min-width: @grid-float-breakpoint) {
+        height:auto;  
+    }
+ 
+    position:relative;
+    /* social icon container */
+   
+            .social-networks {
+                margin-top:15px;
+                 list-style: none outside none; margin: 0px; padding: 0px; float: left;
+                 li { float: left; margin: 15px 20px 0px 0px; position: relative; height: 26px; }
+                 a { opacity:0.5; text-indent: -9999px; overflow: hidden; float: left; background-repeat: no-repeat; background-position: left top !important;
+                 &:hover { opacity:1; }
+                 }
+                  .facebook a { background-image: url('../images/facebook.png') ! important; width: 9px; height: 17px; }
+                  .twitter a { background-image: url('../images/twitter.png') ! important; width: 13px; height: 16px; }
+                  .linkedin a { background-image: url('../images/linkedin.png') ! important; width: 14px; height: 13px; }
+                  .rss a { background-image: url('../images/rss.png') ! important; width: 13px; height: 13px; }
+                   .dribbble a { background-image: url('../images/dribbble.png') ! important; width: 16px; height: 16px; }
+                   .tf-pinterest a { background-image: url('../images/pinterest.png') ! important; width: 16px ! important; height: 20px ! important; }
+                    .vimeo a { background-image: url('../images/vimeo.png') ! important; width: 18px; height: 16px; } 
+                }
+         .social-networks-light {
+            .facebook a { background-image: url('../images/facebook_001.png') ! important; }
+            .twitter a { background-image: url('../images/twitter_001.png') ! important; }
+            .linkedin a { background-image: url('../images/linkedin_001.png') ! important; }
+             .rss a { background-image: url('../images/rss_001.png') ! important; }
+             .dribbble a { background-image: url('../images/dribbble_001.png') ! important; }
+              .tf-pinterest a { background-image: url('../images/pinterest_001.png') ! important; }
+              .vimeo a { background-image: url('../images/vimeo_001.png') ! important; }
+         }
+     
+       
+          
+    }
+    
+/* feature content area style */
+
+       /* Half Page Height Carousel Customization */
+          
+        .item,
+        .active,
+        .carousel-inner {
+          height: 100%;
+           overflow: hidden;
+        position: relative; 
+        text-indent:0;
+        }  
+        .carousel-inner {width: 100%; 
+            
+            .fill {
+              width: 100%;
+              height: 100%;
+              display:block;
+              background-position: center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            &.one {background-image:url('../images/carousel1.jpg') ;}
+            &.two {background-image:url('../images/carousel2.jpg')  ;}
+            &.three {background-image:url('../images/carousel3.jpg') ;}
+            }
+        }
+ 
+.title {
+   display: table;
+    margin: 40px 0 20px;
+   width:100%;
+    
+     h3 {
+         white-space: nowrap;
+        display:table-cell;
+        font-size: 16px !important;
+        margin: 0 !important;
+        padding: 0 8px 0 0 !important;
+        color: @gray-dark;
+      
+         }
+    .title-sep-container {
+        display: table-cell;
+    height: 6px;
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+        }
+   .title-sep { 
+            display: block;
+            border-top: 1px solid rgb(231, 230, 230); 
+            border-bottom: 1px solid rgb(231, 230, 230);
+            width: 100%;
+            position: relative;
+            height: 8px;
+            } 
+    }
+ 
+ .speakers-containerhome-section-mid {
+     background:url("../images/blue-box-bg.jpg") repeat-x center top;
+     }
+    
+/*- informa home page tabbing  -*/    
+.home-tab {
+     @media (min-width: @grid-float-breakpoint) {
+        padding:40px 0 0; 
+        .tab-content {
+                min-height: 275px;
+            }
+     }
+    }
+ .tab-content { 
+        height:auto !important;
+     }
+ /* informa image gallery */
+ #gallery,  #vgallery{
+      &.carousel {
+          margin-top:0;
+          height: 200px;
+          border:4px solid @gray-lighter;
+         .carousel-indicators { 
+                bottom:-18%;
+                left:31%;
+                height:15px;
+                width: auto; 
+                li {
+                         border-color:@informa-orange;
+                    }
+                li.active { background:@informa-orange;  }
+             }         
+         .fill { 
+            text-align:center;
+            width: 100%;
+             height: 100%;
+             background-position: center;
+              -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+        background-size: cover;
+    
+        }
+      }
+      
+    .view-more { 
+            margin-top:5px;
+            color:@informa-orange;
+            cursor:pointer;
+        }  
+     }
+#sponsors { 
+    
+    margin-top:15px;
+    .title {
+            margin:25px 0 0;
+        }
+    .row {
+            margin:0;
+            
+        }    
+}   
+
+div.visitor-page {
+      min-height: 100%;
+    height: 100%;
+    position: relative;
+
+ul#visitor {
+    margin:0; padding:0;
+    list-style:none;
+li {
+    list-style:none;
+    &.widgets {
+         text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    height: 100%; 
+    z-index: 10;  
+        } 
+    &#text {
+        #text-section{
+        margin-top:50px;
+        }
+    }
+        }
+    }
+}    
+            #hub { 
+                 @media (min-width:@screen-sm) {
+                padding-top:100px;
+                min-height: 700px;
+                 }
+                  padding:20px 0;
+                 
+                 height:auto;
+                margin: 0 auto;
+                width: 100%;
+                position:relative;
+                
+                .drop-shaddow { 
+                        height:12px; 
+                        background:url('../images/bottom-shaddow.png') no-repeat center;
+                        background-size:100%;
+                        margin-bottom:70px;
+                        width:100%; 
+                        margin-top:-1px;
+                    }
+                 
+                .hub-widgets {
+                        display:block;
+                        text-decoration:none; 
+                       /* margin-right:25px;*/
+                        margin:10px 0;
+                       padding:5px 5px 5px 15px; 
+                        position:relative;
+                        color:@informa-heading-color;
+                        background-color: @informa-white;
+                         background-image:  url('../images/arrow-orange.png') ; 
+                         background-repeat:no-repeat;
+                          background-position:95% center ;
+                       @media (min-width:@screen-sm) {
+                        padding:60px 15px 15px; 
+                        background-image:none;
+                        margin:0;
+                       }
+                        &.register-box {
+                                  color:@informa-white;  
+                                  background-color:  @informa-orange;
+                                   background-image:  url('../images/arrow-white.png') ; 
+                                     background-repeat:no-repeat;
+                                 
+                                  background-position:95% center ;   
+                                      @media (min-width:@screen-sm) { 
+                                       background-image:none;
+                                          }
+                                &:hover {
+                                     background-color : @informa-blue; 
+                                      background-image:  url('../images/arrow-white.png') ; 
+                                     background-repeat:no-repeat;
+                                            background-position:98% center ;  
+                                         @media (min-width:@screen-sm) {
+                                         background-image:none;
+                                          } 
+                                    }   
+                            }
+                        p { 
+                             
+                              display: block; /* Fallback for non-webkit */
+                            
+                              max-width: 400px;
+                              height: 16*3; /* Fallback for non-webkit */
+                              margin: 0 auto;
+                              line-height: 16px;
+                           
+                              -webkit-box-orient: vertical;
+                              overflow: hidden;
+                              text-overflow: ellipsis;
+                            
+                                
+                            }
+                        
+                        h2{ 
+                             font-size:20px;
+                             margin:10px 0;
+                             background:none;
+                             padding:0;
+                            }
+                        &:last-child{
+                                margin-right:0;
+                            }
+                        span{
+                                display:block;
+                                position:absolute;
+                                left:-41px;
+                                top:-48px;
+                                margin-left:50%;
+                                width:91px;
+                                height:91px; 
+                                text-indent:-3000px;
+                               
+                                    &.why-visit {
+                                       background: url('../images/visitor-whyvisit-icon.png') no-repeat;          
+                                    }
+                                    &.profile {
+                                       background: url('../images/visitor-profile-icon.png') no-repeat;               
+                                    }
+                                    &.exhibitor {
+                                      background: url('../images/visitor-list-icon.png') no-repeat;               
+                                    }
+                                    &.download {
+                                       background: url('../images/visitor-ticket-icon.png') no-repeat;                
+                                    }
+                                    &.location {
+                                       background: url('../images/visitor-map-icon.png') no-repeat;               
+                                    }
+                                    &.register {
+                                       background: url('../images/visitor-reg-icon.png') no-repeat;               
+                                    }
+                            }
+                        &:active , &.active, &:hover { 
+                                    transition: all 0.5s ease;
+                                    color:@informa-white; 
+                                   background-color:  @informa-orange;
+                                   background-image:  url('../images/arrow-white.png'); 
+                                      background-position:98% center ;  
+                                     background-repeat:no-repeat;
+                                     
+                                     @media (min-width:@screen-sm) { 
+                                       background-image:none;
+                                          }
+                                   span {
+                                        top:-55px;
+                                       transition:top 0.5s ease;
+                                       }
+                                    .why-visit {
+                                       background: url('../images/visitor-whyvisit-icon-hover.png') no-repeat;   
+                                    }
+                                    .profile {
+                                       background: url('../images/visitor-profile-icon-hover.png') no-repeat; 
+                                       
+                                    }
+                                    .exhibitor { 
+                                        background: url('../images/visitor-list-icon-hover.png') no-repeat; 
+                                    }
+                                    .download {
+                                       background: url('../images/visitor-ticket-icon-hover.png') no-repeat; 
+                                    }
+                                    .location {
+                                        background: url('../images/visitor-map-icon-hover.png') no-repeat; 
+                                    }
+                                    .register {
+                                        background: url('../images/visitor-reg-icon-hover.png') no-repeat; 
+                                    }
+                            }
+                            
+                    }
+     }
+     #facts {
+                 background-color: #fff; 
+                margin: 0 auto;
+                width: 100%;
+                padding:80px 0 100px 0;
+                }
+     
+    
+        
+ 
+/* for sliding menu content */
+ 
+#sidebar {
+  height: 100%;
+  padding-right: 0;
+  padding-top: 20px;
+  position:relative;
+  .nav {
+  width: 95%;
+}
+button.navbar-toggle {
+    z-index: 5555;
+    
+   .icon-bar {
+        background:#fff;
+       }
+    }
+}
+ 
+/* **** delegate zone *** */
+/* speaker profile */
+
+.speaker {
+    .img-container img { width:100px; height:100px; margin:0 auto}
+   .hall-cnt { height:auto!important}
+    .view-more { float:right; line-height:35px; font-size:10px; color: @informa-orange; }
+   &.listView { 
+       height:auto;
+    .view-more { padding:0 20px;  }
+    .hall-cnt { float: left !important; margin-left:25px; 
+        div {
+                font-size:12px;  
+            }
+        }
+   }
+    
+   &.gridView {
+       height:250px;
+       .hall{ float:none !important  }
+       
+       }
+   
+}
+ 
+/* delegate zone -speaker */
+
+ .speakers-container { 
+        text-align:center;
+        color:@gray-dark;
+        padding:5px; 
+        height:200px;
+      //&:nth-child(odd){
+    //   background-color: #f9f5f1;
+     //  } 
+        h4{ 
+                font-weight:bold;
+                font-size: 14px;
+            }
+        strong {
+                display:block; 
+            }
+        .navbar-link {
+                font-size:14px;
+            }    
+     }
+/* delegate zone - testimonial */
+.delegate-img {
+    height:225px;
+    padding:0;
+    img { 
+            height:100%;
+            width:100%;
+        }
+    }
+.delegate-widgets  {
+    margin:10px 0;
+    padding:10px; 
+    border-radius:5px;
+    transition: all 1s;
+    &:hover {
+        box-shadow:1px 1px 5px #bac5df;
+        background:#f2f4f9;
+        pointer:cursor;
+        }
+       &.conf-1 {
+       // background:#bac5df;
+       h2 {
+            color:#1c3f94;
+           }
+        .navbar-link {
+             color:#1c3f94;
+            }
+        }  
+      &.conf-2 {
+       // background:#d2d9ea;
+         h2 {
+            color:#D9534F;
+           }
+        .navbar-link {
+             color:#D9534F;
+            }
+        }
+     &.conf-3 {
+       // background:#e8ebf4;
+         h2 {
+            color:#5BC0DE;
+           }
+        .navbar-link {
+             color:#5BC0DE;
+            }
+        }
+         &.conf-4 {
+      //  background:#f2f4f9;
+        h2 {
+            color:#f19517;
+           }
+        .navbar-link {
+             color:#f19517;
+            }
+        } 
+     .navbar-link { padding:5px; background-color:#fff; border-radius:5px;}
+    }
+.testimonials {
+    .caroufredsel_wrapper {
+    height:210px;
+    }
+    .testimonial-container {
+      margin-bottom:10px;
+     list-style:none;  
+     padding:0;
+   
+     li {
+         margin-top: 1px;
+        
+        .testimonial-text {
+            padding:20px 20px; 
+            background-color:@informa-gray;
+            blockquote {
+                    font-size:12px; 
+                    font-style:italic;
+                    border-left:none; 
+                    margin-bottom:0;
+                } 
+            }
+            .testimonial-user {
+                background:url('../images/testimonial-user.jpg') no-repeat left;
+                padding: 24px 0 0 54px;
+                height:42px;
+                }
+     }
+     }
+}
+
+/* Venue and Travel zone */
+.travel-section {
+ .col-xs-12 {
+        padding-bottom:10px;
+     }
+        a.navbar-link {
+                
+                clear:both;
+                background:url('../images/orange-arrow.jpg') no-repeat center right;
+                padding-right:12px;
+                &:hover{
+                    background: url('../images/blue-arrow.jpg') no-repeat center right;
+                        }
+            }
+        ul 
+        {   padding-left:5px;
+            padding-top:10px;
+            li {
+                list-style:none;
+                 padding-left: 18px;
+                 background: url('../images/blue-arrow.jpg') no-repeat center left;
+                 background-position:0px;
+                 transition:background-position 1s ease;
+            &:hover {
+                background-position: 5px;
+                transition:background-position 1s ease;
+                }
+            }
+        } 
+         .related-events {
+             .logos {
+             text-align:center;
+             }
+             }
+    }
+
+/*contact us page*/
+
+ 
+    .row.contact-us
+        {    
+            margin: 15px 0;
+            &:nth-child(odd){
+                background-color:#fdf4ed; 
+            }
+            h2{ 
+                
+                a {
+                    color: @informa-blue;
+                    text-decoration:none;
+                    &:hover {
+                         color: @informa-orange;
+                        }
+                    }
+                    &.title {
+                         text-align:center;
+                            padding:0;
+                              @media(min-width:@screen-tablet) {
+                                 text-align:left; 
+                                  font-size:24px;
+                                  }
+                               @media(min-width:@screen-desktop) {
+                                text-align:left;
+                                 padding:5px 0;
+                                  font-size:24px;
+                                }
+                                
+                        }
+                    &.details {
+                            text-align:center;
+                            @media(min-width:@screen-desktop) {
+                                text-align:right;
+                                padding:5px 0;
+                                 font-size:24px;
+                                }
+                                   @media(min-width:@screen-tablet) {
+                                 text-align:left; 
+                                  font-size:24px;
+                                  }
+                            padding:10px 0;
+                        }
+                     font-size:20px;
+                     margin:5px 0;
+                     background:none;
+                     padding:0;
+                     line-height:30px;
+                     color:@informa-orange;
+               }
+          ul {
+              padding: 10px 0;
+              margin:5px 0 ;
+              border-bottom: 1px solid @informa-border-color;
+              
+              @media(min-width:@screen-tablet) {
+                                 border-bottom:none;
+                                }
+              
+            li {
+                list-style:none;
+                line-height:24px; 
+                color:@gray; 
+                font-size:14px;
+                a { 
+                    text-decoration:none;
+                    &:hover{
+                            color:@informa-orange;
+                        }
+                    }
+                }  
+          }
+        }
+ 
+
+.related-events {
+    a {
+            display:block;
+            margin:10px 0; 
+        }
+    
+    }
+/* shuffle page for sponsors */
+#filter {
+    list-style:none;
+    padding:0;
+    margin-bottom:25px;
+    height:50px;
+    li { 
+    	float:left; 
+    	margin:0 2px;  
+     
+    }
+}
+#grid-logo {
+        position:relative;
+        .item-logo {
+                min-height: 150px;
+            }
+    } 
+/* speaker page style */
+
+#picture {
+      width: 200px;
+      height: 250px; 
+      background-size: cover; 
+      position: relative;    
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+       box-sizing: border-box;
+       background-repeat:no-repeat;
+             
+               }
+.pic_transform {
+        transition-duration: 0.5s;            
+        -webkit-transition-duration: 0.5s; 
+        -moz-transition-duration: 0.5s;    
+        -o-transition-duration: 0.5s; 
+         height: 0px;
+         overflow: hidden;
+       
+                         }
+#picture:hover .pic_transform {
+          height: 100%;
+                          }
+.text_display {
+        transform-origin: top;               
+        transition-duration: 0.5s;               
+        -webkit-transform-origin: top;       
+        -webkit-transition-duration: 0.5s;   
+        -moz-transform-origin: top;           
+        -moz-transition-duration: 0.5s;       
+        -o-transform-origin: top;    
+        -o-transition-duration: 0.5s;
+        font-size: 16px;
+        font-family: Arial;       
+        font-weight: normal;
+        text-align:center;
+        color: #FFF;   
+                     }
+#picture:hover .text_display {
+         background: rgba(0, 0, 0, 0.5);   
+         color: #fff;   
+         height:100%;
+       position:absolute;
+        top:0;
+  }
+ 
+
+/* home page style */
+.image-container, .text-container { float:left; } 
+.speaker-section{
+.user-link {
+    padding:0; margin:0;
+    text-align:center;
+    li {
+            list-style:none;
+            display:block;
+            margin:10px auto ;
+           a { width:80%; }
+        }
+    }
+ .speaker-pic { margin-top:45px}   
+}
+.speaker-view-all { 
+        width:100%;
+        padding:5px 0;
+        background:@informa-gray;
+        margin-top:10px;
+        a {
+                float:right;
+                margin-right:15px;
+                text-decoration: none;
+                color: @informa-blue;
+            }
+        
+    }
+.section-mid  {margin-top:15px; }    
+.agenda-section-mid, 
+ {
+    article { margin-top:15px; }
+    }
+
+.row { margin:0!important}
+.conference-title { margin-top:15px !important}
+.show-countdown {
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+    width: 230px;
+}
+
+.img-responsive.pull-left { padding:0 15px 15px 0;}

@@ -1,0 +1,276 @@
+ #col-2 {
+        background-color: #deb003;
+    }
+
+    #col-2 a {
+        color: #fffa85;
+    }
+
+    #col-2 a.expand {
+        color: #fffa85;
+    }
+
+    #col-2 .hovering {
+        background-color: #edbc03;
+    }
+
+    #col-2 .starred {
+        color: #deb003;
+    }
+
+    #col-2 .events-list {
+        border-top: 1px solid #fccc18;
+    }
+
+    #col-2 .event {
+        border-bottom: 1px solid #fccc18;
+    }
+
+    #col-2 ::selection {
+        background: #fff62f;
+        color: #151000;
+    }
+
+    #col-2 ::-moz-selection {
+        background: #fff62f;
+        color: #151000;
+    }
+
+    #col-2 .sub-nav .late-night a {
+        font-weight: normal;
+        background-color: #ac8802;
+    }
+
+    #col-2 .sub-nav .late-night a:hover {
+        background-color: transparent;
+    }
+
+    #col-2 .sub-nav .late-night a:active {
+        background-color: #fffa85;
+    }
+
+    #col-2 .night-mode .sub-nav .late-night a {
+        background-color: #333;
+        color: #f0f0f0;
+    }
+
+    #col-2 .night-mode .sub-nav .late-night a:hover {
+        background-color: transparent;
+    }
+
+    #col-2 .night-mode .sub-nav .late-night a:active {
+        background-color: #e1d700;
+    }
+
+    #col-2 .night-mode .hovering {
+        background-color: #222;
+    }
+
+    #col-2 .night-mode a {
+        color: #e1d700;
+    }
+    
+    
+    
+  max width: 479 
+  
+   #col-2 {
+        background-color: #deb003;
+    }
+
+    #col-2 a {
+        color: #fffa85;
+    }
+
+    #col-2 a.expand {
+        color: #fffa85;
+    }
+
+    #col-2 .hovering {
+        background-color: #edbc03;
+    }
+
+    #col-2 .starred {
+        color: #deb003;
+    }
+
+    #col-2 .events-list {
+        border-top: 1px solid #fccc18;
+    }
+
+    #col-2 .event {
+        border-bottom: 1px solid #fccc18;
+    }
+
+    #col-2 ::selection {
+        background: #fff62f;
+        color: #151000;
+    }
+
+    #col-2 ::-moz-selection {
+        background: #fff62f;
+        color: #151000;
+    }
+
+    #col-2 .sub-nav .late-night a {
+        font-weight: normal;
+        background-color: #ac8802;
+    }
+
+    #col-2 .sub-nav .late-night a:hover {
+        background-color: transparent;
+    }
+
+    #col-2 .sub-nav .late-night a:active {
+        background-color: #fffa85;
+    }
+
+    #col-2 .night-mode .sub-nav .late-night a {
+        background-color: #333;
+        color: #f0f0f0;
+    }
+
+    #col-2 .night-mode .sub-nav .late-night a:hover {
+        background-color: transparent;
+    }
+
+    #col-2 .night-mode .sub-nav .late-night a:active {
+        background-color: #e1d700;
+    }
+
+    #col-2 .night-mode .hovering {
+        background-color: #222;
+    }
+
+    #col-2 .night-mode a {
+        color: #e1d700;
+    }
+
+    #col-2 .night-mode .day-number,#col-2 .night-mode .day-name {
+        color: #e1d700;
+    }
+
+    #col-2 .night-mode .night-day {
+        color: #f3f2da;
+        text-shadow: 0px 0px 20px #f3f2da;
+    }
+
+    #col-2 a:hover,#col-2 a.expand:hover {
+        color: #f0f0f0;
+        text-decoration: none;
+    }
+
+    #col-2 a:active,#col-2 a.expand:active {
+        color: #151000;
+    }
+    
+         
+    #col-2 {
+        background-color: #deb003;
+    }
+
+    #col-2 a {
+        color: #fffa85;
+    }
+
+    #col-2 a.expand {
+        color: #fffa85;
+    }
+
+    #col-2 .hovering {
+        background-color: #edbc03;
+    }
+
+    #col-2 .starred {
+        color: #deb003;
+    }
+
+    #col-2 .events-list {
+        border-top: 1px solid #fccc18;
+    }
+
+    #col-2 .event {
+        border-bottom: 1px solid #fccc18;
+    }
+
+    #col-2 ::selection {
+        background: #fff62f;
+        color: #151000;
+    }
+
+    #col-2 ::-moz-selection {
+        background: #fff62f;
+        color: #151000;
+    }
+
+    #col-2 .sub-nav .late-night a {
+        font-weight: normal;
+        background-color: #ac8802;
+    }
+
+    #col-2 .sub-nav .late-night a:hover {
+        background-color: transparent;
+    }
+
+    #col-2 .sub-nav .late-night a:active {
+        background-color: #fffa85;
+    }
+
+    #col-2 .night-mode .sub-nav .late-night a {
+        background-color: #333;
+        color: #f0f0f0;
+    }
+
+    #col-2 .night-mode .sub-nav .late-night a:hover {
+        background-color: transparent;
+    }
+
+    #col-2 .night-mode .sub-nav .late-night a:active {
+        background-color: #e1d700;
+    }
+
+    #col-2 .night-mode .hovering {
+        background-color: #222;
+    }
+
+    #col-2 .night-mode a {
+        color: #e1d700;
+    }
+
+    #col-2 .night-mode .day-number,#col-2 .night-mode .day-name {
+        color: #e1d700;
+    }
+
+    #col-2 .night-mode .night-day {
+        color: #f3f2da;
+        text-shadow: 0px 0px 20px #f3f2da;
+    }
+
+    #col-2 a:hover,#col-2 a.expand:hover {
+        color: #f0f0f0;
+        text-decoration: none;
+    }
+
+    #col-2 a:active,#col-2 a.expand:active {
+        color: #151000;
+    }
+  
+   
+
+    #col-2 .night-mode .day-number,#col-2 .night-mode .day-name {
+        color: #e1d700;
+    }
+
+    #col-2 .night-mode .night-day {
+        color: #f3f2da;
+        text-shadow: 0px 0px 20px #f3f2da;
+    }
+
+    #col-2 a:hover,#col-2 a.expand:hover {
+        color: #f0f0f0;
+        text-decoration: none;
+    }
+
+    #col-2 a:active,#col-2 a.expand:active {
+        color: #151000;
+    }

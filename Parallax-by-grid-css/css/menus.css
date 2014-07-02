@@ -1,0 +1,109 @@
+/* CSS crunched with Crunch - http://crunchapp.net/ */
+nav {
+  background: #d2d2d2;
+}
+nav a {
+  color: #414141;
+  text-shadow: 1px 1px 0px #ddd;
+}
+nav a:hover,
+nav a:active {
+  background-color: #d2d2d2;
+  color: #fff;
+}
+nav a.pull {
+  background-color: #414141;
+}
+nav li a {
+  border-right: 1px solid #f0f0f0;
+}
+/* Basic menu Styles */
+nav {
+  height: 50px;
+  width: 100%;
+  font-size: 11pt;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  /*border-bottom: 2px solid #283744;*/
+}
+@media screen and (max-width: 600px) {
+  nav {
+    height: auto;
+  }
+}
+nav a {
+  display: inline-block;
+  width: auto;
+  padding: 0 15px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 40px;
+}
+nav a#pull {
+  display: none;
+}
+@media only screen and (max-width: 480px) {
+  nav a#pull {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+  nav a#pull:after {
+    content: "";
+    background: url('../images/nav-icon.png') no-repeat;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+}
+nav ul {
+  padding: 0;
+  margin: 0 auto;
+  width: 1000px;
+  height: 40px;
+}
+@media screen and (max-width: 600px) {
+  nav ul {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 480px) {
+  nav ul {
+    display: none;
+    height: auto;
+  }
+}
+nav ul li {
+  display: inline;
+  float: left;
+}
+@media screen and (max-width: 600px) {
+  nav ul li {
+    width: 50%;
+    float: left;
+    position: relative;
+  }
+}
+@media only screen and (max-width: 480px) {
+  nav ul li {
+    width: 100%;
+    float: none;
+  }
+}
+nav ul li:last-child a {
+  border-right: 0;
+}
+nav ul li a {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}

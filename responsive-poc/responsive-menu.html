@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+           
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+         <title>Assignment Q#1 - by Shahzad Hussain</title>
+        <meta name="description" content=""> 
+<style>
+ * {
+      margin: 0;
+      padding: 0;
+    }
+ 	.wrapper { width:1000px; margin:100px auto; }	 		
+  
+    nav {
+      display: block; 
+      margin:50px auto;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+    }
+    nav li {
+      display: inline-block;
+    }
+    nav a {
+      display: inline-block;
+      background: #ccc;     
+      padding: 5px 15px;
+	  color:#fff; 
+      text-decoration: none;
+	  transition: all 0.5s ease;
+	 -webkit-transition: all 0.5s ease;
+	  border-radius:5px;
+    }
+    nav a:hover { 
+      background: #003366;
+    }
+    nav a:active {
+      background: #000;
+    }
+    nav select {
+      display: none;
+    }
+    
+    @media (max-width: 960px) {
+	.wrapper {width:100%}
+      nav ul     { display: none; }
+      nav select { display: inline-block; }
+    }
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+<p>Q1:Convert the <xmp><select></xmp> tag below to a <xmp> <ul> </xmp> if the user’s window width is greater than 760px.</p>
+<nav> 
+  	<ul> 
+  		<li><a href="#" class="active">Acura</a></li> 
+  		<li><a href="#alfa">Alfa Romeo</a></li> 
+  		<li><a href="#aston">Aston Martin</a></li> 
+  		<li><a href="#audi">Audi</a></li> 
+  		<li><a href="#bentley">Bentley</a></li> 
+    </ul>
+  </nav>
+</div>
+
+<!-- supporting script -->
+<!-- Jquery library CDN -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script>
+	 // DOM ready function
+	 $(function() {
+	   
+      // Create the dropdown base
+      $("<select />").appendTo("nav");
+      
+      
+      // Populate dropdown with menu items
+      $("nav a").each(function() {
+       var el = $(this);
+       $("<option />", {
+           "value"   : el.attr("href"),
+           "text"    : el.text()
+       }).appendTo("nav select");
+      });
+      
+	   // calling dropdown based on selected option
+ 
+      $("nav select").change(function() {
+        window.location = $(this).find("option:selected").val();
+      });
+	 
+	 });
+	</script>
+</body>
+</html>
